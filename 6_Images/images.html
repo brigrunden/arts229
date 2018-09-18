@@ -34,8 +34,13 @@ html {
     text-align: center;
     margin-bottom: -10px;
     margin-top: 0px;
-
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url('lemon.gif') no-repeat 60%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: exclusion;
   }
+
   h2 {
     text-align: center;
     margin: 5px;
@@ -60,9 +65,6 @@ html {
     color:#042459;
     text-decoration: none;
   }
-
-
-
   .lemon1{
     width:200px;
     position:fixed;
@@ -79,14 +81,15 @@ html {
 
   .lemon3 {
     width: 100px;
-    margin-left: -95px;
+    padding-left: -95px;
+    padding-top: 105px;
     sition: sticky;
     mix-blend-mode:hard-light;
   }
   .lemon4 {
     width: 300px;
     position: sticky;
-    margin-left: 750px;
+    margin-left: 650px;
     mix-blend-mode:luminosity;
   }
 
@@ -94,7 +97,7 @@ html {
     width: 175px;
     position: fixed;
     float: right;
-    margin-left: 300px;
+    margin-left: 275px;
     margin-top: 200px;
     mix-blend-mode:screen;
   }
@@ -103,7 +106,7 @@ html {
     width: 225px;
     position:absolute;
     float: right;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-top: 300px;
     mix-blend-mode:luminosity;
   }
@@ -112,7 +115,7 @@ html {
     width: 100px;
     position: fixed;
     float:inherit;
-    margin-left: 500px;
+    margin-left: 450px;
     margin-top: 100px;
     mix-blend-mode:luminosity;
   }
@@ -121,7 +124,7 @@ html {
     width: 300px;
     position: fixed;
     float: left;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 550px;
     mix-blend-mode:color-dodge;
   }
@@ -149,7 +152,7 @@ html {
     width: 225px;
     position: fixed;
     float: right;
-    margin-left: -75px;
+    margin-left: -150px;
     margin-top: 125px;
     mix-blend-mode:luminosity;
   }
