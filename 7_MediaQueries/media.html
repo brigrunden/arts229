@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Media Queries Template</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
+  <meta name="keywords" content="media query, layout, assignment">
+  <meta name="author" content="Brianna Grunden">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- this viewport setting is important for responsive web design -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #E4E4E4;
+      color: #042459;
+      width: 80%;
+      max-width: 1000px;
+      margin: 0 auto;
+      font-family: 'Pontano', sans-serif;
+      align-content: center;
+    }
+
+    nav {
+      background-color: #FBD406;
+      padding: -1px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 5px;
+    }
+
+    h1 {
+      font-family: 'Playfair', serif;
+    }
+
+    header {
+      text-align: center;
+      font-size: 30px;
+      margin: -45px;
+        }
+
+    figure {
+      width:15vw;
+      float:right;
+    }
+    figure::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    figcaption {
+      font-size: 12px;
+    }
+    @media screen and (min-width: 600px) {
+      body {
+        background-color: #E4E4E4;
+        color: #042459;
+          }
+          header {
+            font-size: 45px;
+            margin: -60px;
+          }
+          nav {
+            font-size: 20px;
+            float: left;
+            height: 150vh;
+            width: 20vw;
+            margin-right: 25px;
+            padding-right: 5px;
+            padding-left: -15px;
+            text-align: left;
+            min-width: 50px;
+            max-width: 150px;
+          }
+      }
+
+    @media screen and (min-width: 1200px) {
+      body {
+        background-color: #E4E4E4;
+        color: #042459;
+          }
+      }
+
+      a:link {
+        text-decoration: none;
+        color:inherit;
+      }
+    nav a:hover {
+        font-variant-caps: all-petite-caps;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      a:visited {
+        text-decoration: none;
+        color: inherit;
+      }
+      blockquote {
+        font-size: 30px;
+        font-family: 'Playfair', serif;
+        font-weight:bold;
+        color: #FBD406;
+        text-shadow: .5px 0px navy;
+      }
+
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>It's Me,<a href=https://brigrunden.github.io/arts229/> Bri </a></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Michael Has Two Bullets</h1>
+    <p> [Michael is making farting noises] </p>
+    <p>  Toby:	Come on Michael. You're interrupting. </p>
+    <p>  Michael Scott:	You're kidding me! God! You say radon is silent but deadly and then
+      you expect me not to make farting noises with my mouth? What is this! You know what we're
+       not going to die of radon we're going to die of boredom.  </p>
+    <p>  [office laughs]  </p>
+  <p>    Michael Scott:	Right? And if I had a gun, with two bullets, and I was in a room with
+       Hitler, Bin Laden and Toby, I would shoot Toby twice. </p>
+  <p>    [disapproval from everyone] </p>
+
+  </article>
+
+  <aside>
+    <figure>
+      <img src="pam.png" alt="Pam Beesly" title="Pam"  width="150px" />
+      <figcaption><i>Roses are red, paper is white and 'I feel God in this Chilis tonight'</i></figcaption>
+    </figure>
+
+    </aside>
+
+  <section>
+    <h1>Pam Wins a Dundie</h1>
+      <p>Michael Scott: And this next award is going out to our own little Pam Beesly. I think we all k
+        now what award Pam is gonna be getting this year. It is the Whitest Sneakers Award, because she
+        always has the whitest tennis shoes on. Get on down here! Pam Beesly, ladies and gentlemen! Oh, here we go.</p>
+
+          <p>Pam Beesly: [very drunk] I have so many people to thank for this award. Okay, first off, my Keds,
+          because I couldn't have done it without them. Thank you. Let's give Michael a round of applause for
+          emceeing tonight, because this is a lot harder than it looks.</p>
+
+        <p>[applause]</p>
+
+        <p>Pam Beesly: And also because of Dwight, too.</p>
+
+        <p>[silence]</p>
+
+      <p>Pam Beesly: So, finally, I wanna thank God, because God gave me this Dundie and I feel God in this Chili's tonight.</p>
+
+      <p>Pam Beesly: [Pam whoops loudly]</p>
+
+      <p>  Chili's Manager: We have a strict policy here not to over-serve. Apparently, this young woman was
+          sneaking drinks off of other people's tables. I Xeroxed her driver's license, and she is not welcome at
+          this restaurant chain ever again. </p>
+
+
+    <blockquote>
+       Oh, my God! I just want to say that this was the best Dundies ever. -Pam Beesly
+
+     </blockquote>
+
+
+     <h1>A Dangerous Warehouse</h1>
+     <figure>
+       <img src="michael.png" alt="Michael" title="Michael"  width="150px" />
+       <figcaption><i>'Why are you the way that you are?'</i></figcaption>
+     </figure>
+       <p>
+      Toby:	Actually, I didn't think it was appropriate to invite children since it's, uh, you know.
+       There's gambling and alcohol... And it's in our dangerous warehouse. And it's a school night.
+       And, you know, Hooters is catering. You know. Is that- is that enough? Should I keep going?</p>
+      <p> Michael Scott:	Why are you the way that you are? Honestly, every time I try to do something fun
+       or exciting, you make it not that way. I hate so much about the things that you choose to be</p>
+
+  </section>
+
+  <footer>
+    <hr />
+    <p>
+      &copy; GRUNDEN DESIGN
+    </p>
+  </footer>
+
+</body>
+
+</html>
