@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Media Queries Template</title>
+  <title>Media Queries</title>
   <meta charset="UTF-8">
   <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
   <meta name="keywords" content="media query, layout, assignment">
@@ -26,14 +26,16 @@
     nav {
       background-color: #FBD406;
       padding: -1px;
-      text-align: center;
+      text-align: left;
       font-size: 15px;
+      min-width: 240px;
     }
 
     nav li {
       display: inline-block;
       margin: 5px;
     }
+
 
     h1 {
       font-family: 'Playfair', serif;
@@ -72,19 +74,25 @@
             height: 150vh;
             width: 20vw;
             margin-right: 25px;
-            padding-right: 5px;
+            padding-right: 30px;
             padding-left: -15px;
             text-align: left;
-            min-width: 50px;
+            min-width: 75px;
             max-width: 150px;
           }
       }
 
     @media screen and (min-width: 1200px) {
       body {
+        background-color: #B0C4D9;
+        color: #042459;
+      }
+      nav {
         background-color: #E4E4E4;
         color: #042459;
+        padding-right: 40px;
           }
+
       }
 
       a:link {
