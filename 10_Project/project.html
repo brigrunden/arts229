@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Media Queries</title>
+  <title>Proj</title>
   <meta charset="UTF-8">
   <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
   <meta name="keywords" content="media query, layout, assignment">
@@ -21,33 +21,61 @@
 
       }
 
+      .grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 10px;
+      }
+      .span-col-4{grid-column: span 4 / auto;}
+
+      .span-col-2{grid-column: span 2 / auto;}
 
   </style>
 
 </head>
 
 <body>
-  <header>
-    <h1>It's Me,<a href=https://brigrunden.github.io/arts229/> Bri </a></h1>
-  </header>
+  <div class="grid">
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
+    <div class="span-col-4">NAV</div>
+
+    <div class="span-col-4">It's Me, Bri</div>
+
+    <div class="span-col-4">About Me</div>
+
+    <div class="span-col-2">PICTURE</div>
+
+    <div class="span-col-2">BIO</div>
+
+    <div class="span-col-4">INSTAGRAM</div>
+
+    <div> <img src="insta/img1.jpg" alt="Image1" width= "200px"> </div>
+
+    <div> <img src="insta/img2.jpg" alt="Image2" width= "200px"> </div>
+
+    <div> <img src="insta/img3.jpg" alt="Image3" width= "200px"> </div>
+
+    <div> <img src="insta/img4.jpg" alt="Image4" width= "200px"> </div>
+
+    <div> <img src="insta/img5.jpg" alt="Image5" width= "200px"> </div>
+
+    <div> <img src="insta/img6.jpg" alt="Image6" width= "200px"> </div>
+
+    <div> <img src="insta/img7.jpg" alt="Image7" width= "200px"> </div>
+
+    <div> <img src="insta/img8.jpg" alt="Image8" width= "200px"> </div>
+
+    <div> <img src="insta/img9.jpg" alt="Image9" width= "200px"> </div>
+
+    <div> <img src="insta/img10.jpg" alt="Image10" width= "200px"> </div>
+
+    <div> <img src="insta/img11.jpg" alt="Image11" width= "200px"> </div>
+
+    <div> <img src="insta/img12.jpg" alt="Image12" width= "200px"> </div>
 
 
 
-  <footer>
-    <hr />
-    <p>
-      &copy; GRUNDEN DESIGN
-    </p>
-  </footer>
 
-</body>
-
+    <div class="span-col-4">FOOTER</div>
+  </div>
 </html>
