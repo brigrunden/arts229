@@ -1,0 +1,132 @@
+
+  body {
+    min-width: 300px;
+    background-color: #FCDCD4;
+    margin: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 1200px;
+    align-content: center;
+  }
+  .head {
+    display: grid;
+    grid-column-gap: 50px;
+    align-content: center;
+    justify-content:center;
+    margin-left: 25px;
+  }
+
+  .heading {
+    display:inline-grid;
+    font-size: 65px;
+    font-family: 'Abril Fatface', serif;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    grid-column: span 5 /auto;
+    float: right;
+  }
+  .heading:hover {
+    transform: rotateX(180deg);
+  }
+  #header {
+    font-family: 'Abril Fatface', serif;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    color: #78787B;
+    padding-bottom: 15px;
+      }
+  .pgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+    align-content: center;
+    justify-content:center;
+    margin-left: 25px;
+  }
+
+
+  .grid img{
+    padding: 2px;
+  }
+
+  nav {
+    font-size: 15px;
+
+  }
+  .pgrid img {
+    width: 300px;
+    float:left;
+    padding-right: 10px;
+    margin-bottom: 20px;
+	  overflow: hidden;
+  }
+nav  a:link {
+    text-decoration: none;
+    color: #78787B;
+  }
+nav  a:hover {
+    font-size: 20px;
+    font-style: italic;
+    padding: -10px;
+    transition: all .5s ease-in-out;
+  }
+nav  a:visited {
+    color: #78787B;
+  }
+a:link {
+      text-decoration: none;
+      color: black;
+    }
+a:visited {
+      color: black;
+    }
+
+
+  @media screen and (min-width: 700px) {
+    .pgrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      grid-gap: 5px;
+    }
+    .span-col-4 {
+      grid-column: span 2 / auto;
+    }
+
+    .span-col-2 {
+      grid-column: span 2 / auto;
+    }
+    #header {
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      margin-top: 65px;
+    }
+    .heading {
+      font-size: 100px;
+    }
+
+      nav {
+        font-size: 18px;
+        position:absolute;
+      }
+  }
+  a:hover {
+    font-size: 21px;
+    font-style: italic;
+  }
+
+  @media screen and (min-width: 900px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5px;
+    }
+
+    .span-col-4 {
+      grid-column: span 3 / auto;
+    }
+
+    .span-col-2 {
+      grid-column: span 2 / auto;
+    }
+  }
