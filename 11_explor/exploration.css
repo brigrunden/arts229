@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  display: flex;
+  background: #000;
+}
+.slider .slide {
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  border: solid #fff;
+  border-width: 1px;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.25;
+  width: 30%;
+  transition: width 0.8s ease, opacity 0.5s ease;
+}
+.slider .slide:hover {
+  width: 200%;
+  opacity: 1;
+}
