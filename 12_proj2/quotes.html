@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<script>
+! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');
+
+</script>
 </head>
 <body>
 
@@ -21,20 +34,50 @@
     </nav>
 
   <main class="slider">
-      	<div class="slide" style="background-image:url(flower.jpg);" ></div>
-      	<div class="slide" style="background-image:url(book.jpg);" ></div>
-      	<div class="slide" style="background-image:url(paint.jpg" ></div>
-      	<div class="slide" style="background-image:url(vogue.jpg);" ></div>
+      	<div class="slide" style="background-image:url(images/halloween.gif);" ></div>
+      	<div class="slide" style="background-image:url(images/fewword.gif);" ></div>
+      	<div class="slide" style="background-image:url(images/haveyoulost.gif);" ></div>
+      	<div class="slide" style="background-image:url(images/jazzhands.gif);" ></div>
 
 </main>
 
-<div class="quote">
-        <h3> "You miss 100% of the shots you don't take -Wayne Gretzky"
-          -Michael Scott
-        </h3>
+<div class="container"Id="quotediv">
+<main>
+<div class="quote-container"Id="quotediv">
+  <blockquote>
+    <p class="quote-text" id="quote">Click the button below to generate a random quote.</p>
+    <p id="quote-author" class="quote-author"></p>
 
+  </blockquote>
+
+  <span class="button-container">
+            <button class="button button_quote" id="quote-button">Get a new quote</button>
+        </span>
 
 </div>
+
+</main>
+
+</div>
+
+<script  src="index.js"></script>
+
+<figure>
+
+  <div class="quotesimg">
+     <img src="images/gif/bankruptcy.gif" alt="Michael Scott- I Declate Bankruptcy">
+   </div>
+    <div class="quotesimg">
+       <img src="images/gif/walkawaybitch.gif" alt="Gabe Lewis- Walk Away Bitch">
+      </div>
+      <div class="quotesimg">
+         <img src="images/gif/powerpoint.gif" alt="Michael Scott- Powerpint">
+       </div>
+        <div class="quotesimg" ID="Nope">
+           <img src="images/gif/deadinside.gif" alt="Michael Scott- I am dead inside">
+          </div>
+
+    </figure>
 
   <footer>
         <h4>This is a footer. It's down here</h4>

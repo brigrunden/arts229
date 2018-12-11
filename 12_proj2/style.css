@@ -30,14 +30,10 @@ body {
 
 
         header {
-            width: 100%;
-            height: auto;
-            background-color: #24B4AC;
+            background: #24B4AC;
         }
 
         nav{
-            width: 100%;
-            height: auto;
             background: #FCE4DC;
         }
 
@@ -57,19 +53,19 @@ body {
           background: #FCE4DC;
         }
         .slider .slide {
-          height: 150px;
+          height: 300px;
           position: relative;
           z-index: 10;
           border: solid #24B4AC;
           border-width: 1px;
           background-size: cover;
           background-position: center center;
-          opacity: 0.25;
+          opacity: 0.80;
           width: 30%;
-          transition: width 0.8s ease, opacity 0.5s ease;
+          transition: width 1.2s ease, opacity 0.5s ease;
         }
         .slider .slide:hover {
-          width: 105%;
+          width: 1500%;
           opacity: 1;
         }
 
@@ -108,18 +104,244 @@ body {
           padding-top: 25px;
           font-size: 10px;
         }
+        .abouttext{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 30px;
+          text-align: center;
+          justify-content: center;
+          margin-bottom: 50px;
+          padding: 15px;
+        }
+        .aboutimg img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 355px;
+          margin-bottom: 15px;
+        }
+        .quotesimg img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 300px;
+          height: auto;
+          margin-bottom: 15px;
+        }
 
 
-        @media screen and (min-width: 600px) {
-          h1{
-              font-size: 60px;
-              text-align: center;
-              font-weight: bold;
+
+      #quotediv  div {
+        background-color: #F4F4F4;
+        margin: 15px;
+        padding: 15px;
+        min-width: 300px;
+        max-width: 1500px;
+        transition: all 0.2s ease-in-out;
+        margin-left: auto;
+        margin-right: auto;
           }
-          h2{
-              font-size: 30px;
+
+
+        a:hover, a:focus {
+        color: #FCE4DC;
+        text-decoration: underline;
+        }
+
+
+        .quote-container {
+        width: 150px;
+        padding: 5%;
+        }
+
+
+        .quote-container blockquote {
+        margin-bottom: 5%;
+        font-family: 'Neuton', serif;
+        line-height: 1.3;
+        }
+
+      .quote-container .quote-author {
+      text-align: right;
+      font-size: 100%;
+      font-weight: 700;
+      }
+      .quote-text {
+        text-align: left;
+        font-size: 100%;
+        font-weight: 700;
+      }
+      .charactergrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 35px;
+        grid-row-gap: 25px;
+        padding: 20px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 75px;
+        margin-bottom: 50px;
+      }
+
+      .item {
+        padding: 20px;
+        font-size: 1rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+        border-radius: 6px;
+      }
+
+      .item:hover {
+        color: #2b2b2b;
+        border: none;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, .1);
+        transition: all .1s linear;
+        transform: translateY(-2px);
+        border-radius: 6px;
+      }
+
+      .item img {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        vertical-align: middle;
+      }
+
+
+      button {
+        border: none;
+        text-align: left;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 100;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+
+      }
+
+      /* Modal Content */
+      .modal-content {
+        background-color: #fff;
+        margin: auto;
+        padding: 20px;
+        border: 3px solid #585858;
+        width: 60%;
+        text-decoration: none;
+        border-radius: 20px;
+
+      }
+
+      .modal-content h3 {
+        color: #585858;
+        font-weight: bolder;
+      }
+
+      .modal-content h2 {
+        color: #585858;
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+      .modal-content p {
+        color: #ooo;
+        font-weight: normal;
+      }
+
+      /* The Close Button */
+      .close {
+        color: #585858;
+        float: right;
+        font-size: 22px;
+        font-weight: normal;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #3c7dc0;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+    hr {
+    color:#585858;
+    background-color: #585858;
+    height: 3px;
+    }
+
+    .about-top h2 {
+    text-align: center;
+    padding-top: 50px;
+    color: #585858;
+    font-size: 20px;
+    }
+
+        @media screen and (min-width: 700px) {
+        h1{
+          font-size: 60px;
+          text-align: center;
+          font-weight: bold;
+          }
+        h2{
+          font-size: 30px;
         }
         .home div{
           font-size: 20px;
         }
-        @media screen and (min-width: 900px) {}
+        .abouttext{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 30px;
+          text-align: center;
+          justify-content: center;
+          margin-bottom: 50px;
+          padding: 15px;
+        }
+        .aboutimg img{
+          width:360px;
+        }
+        figure {
+          display:grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 30px;
+        }
+        .quote-container {
+        width: 100%;
+        margin: 0 auto 23.72881%;
+        padding: 6.77966% 0;
+        }
+        .quote-container .quote-author {
+        font-size: 175%;
+        }
+        .quote-container .quote-text, .quote-container .quote-author {
+        font-size: 200%;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        }
+        .Character div{
+          font-size: 18px;
+        }
+      }
+      .slider .slide:hover {
+        width: 100%;
+        opacity: 1;
+      }
+
+
+        @media screen and (min-width: 1300px) {
+          .aboutimg img{
+            width:400px;
+          }
+        }
