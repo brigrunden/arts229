@@ -288,6 +288,18 @@ body {
     font-size: 20px;
     }
 
+
+
+@media screen and (min-width: 500px) {
+
+     slider .slide:hover {
+        width: 100%;
+        opacity: 1;
+      }
+
+
+}
+
         @media screen and (min-width: 700px) {
         h1{
           font-size: 60px;
