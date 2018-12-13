@@ -65,7 +65,7 @@ body {
           transition: width 1.2s ease, opacity 0.5s ease;
         }
         .slider .slide:hover {
-          width: 1500%;
+          width: 110%;
           opacity: 1;
         }
 
@@ -289,17 +289,6 @@ body {
     }
 
 
-
-@media screen and (min-width: 500px) {
-
-     slider .slide:hover {
-        width: 100%;
-        opacity: 1;
-      }
-
-
-}
-
         @media screen and (min-width: 700px) {
         h1{
           font-size: 60px;
@@ -346,11 +335,7 @@ body {
           font-size: 18px;
         }
       }
-      .slider:hover {
-        width: 100%;
-        opacity: 1;
-      }
-
+    
 
         @media screen and (min-width: 1300px) {
           .aboutimg img{
