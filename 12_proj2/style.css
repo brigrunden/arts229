@@ -334,6 +334,10 @@ body {
         .Character div{
           font-size: 18px;
         }
+                  .slider .slide:hover {
+          width: 85%;
+          opacity: 1;
+        }
       }
     
 
