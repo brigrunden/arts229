@@ -65,7 +65,7 @@ body {
           transition: width 0.8s ease, opacity 0.5s ease;
         }
         .slider .slide:hover {
-          width: 100%;
+          width: 95%;
           opacity: 1;
         }
 
