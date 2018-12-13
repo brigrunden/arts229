@@ -334,7 +334,7 @@ body {
           font-size: 18px;
         }
       }
-      .slider .slide:hover {
+      .slider:hover {
         width: 100%;
         opacity: 1;
       }
