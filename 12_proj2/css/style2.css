@@ -65,7 +65,7 @@ body {
           transition: width 0.8s ease, opacity 0.5s ease;
         }
         .slider .slide:hover {
-          width: 1000%;
+          width: 110%;
           opacity: 1;
         }
 
@@ -185,19 +185,6 @@ body {
   padding-top: 25px;
   font-size: 10px;
 }
-
-
-
-@media screen and (min-width: 500px) {
-
-     slider .slide:hover {
-        width: 100%;
-        opacity: 1;
-      }
-
-
-}
-
 
         @media screen and (min-width: 700px) {
         h1{
